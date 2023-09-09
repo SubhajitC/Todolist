@@ -1,7 +1,0 @@
-/myToDoApp
-  /src
-    /components
-    /navigation
-    /screens
-    /redux
-    /utils

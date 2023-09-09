@@ -1,0 +1,5 @@
+npm install @react-navigation/native @react-navigation/stack 
+react-native-gesture-handler react-native-reanimated
+npm install react-redux redux redux-thunk firebase
+npm install react-native-elements
+npm install react-native-vector-icons
