@@ -1,0 +1,60 @@
+
+TodoAppBackend/
+├── node_modules/
+├── src/
+│   ├── config/
+│   │   ├── database.js
+│   │   └── index.js
+│   ├── controllers/
+│   │   ├── taskController.js
+│   │   └── userController.js
+│   ├── models/
+│   │   ├── Task.js
+│   │   ├── User.js
+│   ├── routes/
+│   │   ├── taskRoutes.js
+│   │   ├── userRoutes.js
+│   ├── app.js
+├── package.json
+├── .env
+└── ...
+------------------Do apiintregation from(TodoAppBackend to TodoApp ) ---------
+1)
+2)
+3)
+TodoApp/
+├── android/
+│   ├── app/
+│   ├── gradle/
+│   └── ...
+├── ios/
+│   ├── Podfile
+│   ├── ...
+├── node_modules/
+├── src/
+│   ├── components/
+│   │   ├── Auth/
+│   │   │   ├── Login.js
+│   │   │   ├── Register.js
+│   │   │   └── ...
+│   │   ├── Tasks/
+│   │   │   ├── TaskList.js
+│   │   │   ├── TaskItem.js
+│   │   │   ├── AddTaskForm.js
+│   │   │   └── ...
+│   ├── navigation/
+│   │   ├── AppNavigator.js
+│   │   └── ...
+│   ├── redux/
+│   │   ├── actions.js
+│   │   ├── reducers.js
+│   │   └── store.js
+│   └── screens/
+│       ├── HomeScreen.js
+│       ├── LoginScreen.js
+│       ├── RegisterScreen.js
+│       └── ...
+├── App.js
+├── firebase.js
+├── package.json
+└── ...
