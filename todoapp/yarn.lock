@@ -6669,7 +6669,7 @@
     "react-native-ratings" "8.0.4"
     "react-native-size-matters" "^0.3.1"
 
-"react-native-gesture-handler@>= 1.0.0":
+"react-native-gesture-handler@^2.12.1", "react-native-gesture-handler@>= 1.0.0":
   "integrity" "sha512-deqh36bw82CFUV9EC4tTo2PP1i9HfCOORGS3Zmv71UYhEZEHkzZv18IZNPB+2Awzj45vLIidZxGYGFxHlDSQ5A=="
   "resolved" "https://registry.npmjs.org/react-native-gesture-handler/-/react-native-gesture-handler-2.12.1.tgz"
   "version" "2.12.1"
@@ -6687,12 +6687,12 @@
   dependencies:
     "lodash" "^4.17.15"
 
-"react-native-safe-area-context@>= 3.0.0":
+"react-native-safe-area-context@^4.7.2", "react-native-safe-area-context@>= 3.0.0":
   "integrity" "sha512-5fy/hRNJ7bI/U2SliOeKf0D80J4lXPc1NsRiNS7Xaz8YTnqlzWib1ViItkwKPfufe54YKzVBMmM32RpdzvO2gg=="
   "resolved" "https://registry.npmjs.org/react-native-safe-area-context/-/react-native-safe-area-context-4.7.2.tgz"
   "version" "4.7.2"
 
-"react-native-screens@>= 3.0.0":
+"react-native-screens@^3.25.0", "react-native-screens@>= 3.0.0":
   "integrity" "sha512-TSC2Ad0hh763I8QT6XxMsPXAagQ+RawDSdFtKRvIz9fCYr96AjRwwaqmYivbqlDywOgcRBkIVynkFtp0ThmlYw=="
   "resolved" "https://registry.npmjs.org/react-native-screens/-/react-native-screens-3.25.0.tgz"
   "version" "3.25.0"

@@ -3,3 +3,11 @@ react-native-gesture-handler react-native-reanimated
 npm install react-redux redux redux-thunk firebase
 npm install react-native-elements
 npm install react-native-vector-icons
+
+npm install @react-navigation/native @react-navigation/stack
+npm install react-native-screens
+
+npm install @react-navigation/native@latest
+npm install @react-navigation/stack@latest
+npm install react-native-safe-area-context
+npm install react-native-gesture-handler

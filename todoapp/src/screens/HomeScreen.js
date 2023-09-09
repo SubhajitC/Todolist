@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, Button, FlatList } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
-import { addTask, deleteTask, markTaskCompleted } from '../redux/actions'; // Assuming you have task-related actions
+import { addTask, deleteTask, markTaskCompleted } from '../Redux/actions'; // Assuming you have task-related actions
 
 const HomeScreen = () => {
   const dispatch = useDispatch();

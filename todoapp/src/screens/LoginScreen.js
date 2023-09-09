@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
 import { useDispatch } from 'react-redux';
-import { loginUser } from '../redux/actions';
+import { loginUser } from '../Redux/actions';
 
 const LoginScreen = ({ navigation }) => {
   const dispatch = useDispatch();
