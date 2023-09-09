@@ -3,6 +3,7 @@ an account in your React Native project using the provided
 firebase.js file and App.js, follow these steps:
 
 Step 1: Set Up Firebase in Your Project
+(https://console.firebase.google.com/u/0/?pli=1)
 
 Create a Firebase project by going to the Firebase 
 Console and clicking on "Add project." Follow 
