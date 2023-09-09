@@ -1,0 +1,44 @@
+There are many alternatives to React Native Paper, some of the most popular include:
+NativeBase, Material-UI, jQuery Mobile, SwiftUI, CoreRender.
+Each of these alternatives has its own strengths and weaknesses, 
+so it is important to choose the one that is the best fit for your needs.
+Here is a brief overview of some of the most popular alternatives to React Native Paper:
+
+NativeBase: NativeBase is a free and open source framework that enables developers 
+to build cross-platform mobile apps with React Native. 
+It provides a set of pre-built components and themes that can be used to create 
+beautiful and responsive user interfaces.
+
+Material-UI: Material-UI is a library of React UI components that implements Google's 
+Material Design guidelines. It is a popular choice for developers who want to create 
+apps that follow Material Design principles.
+
+jQuery Mobile: jQuery Mobile is a HTML5-based user interface 
+system designed to make responsive web sites and apps that are accessible 
+on all smartphone, tablet and desktop devices. 
+It is a popular choice for developers who want to create cross-platform mobile apps with jQuery.
+
+SwiftUI: SwiftUI is a modern UI framework that allows developers to create 
+user interfaces for all Apple platforms with the power of Swift. 
+It is a popular choice for developers who want to create native iOS and macOS apps with Swift.
+
+CoreRender: CoreRender is a React Native library that provides 
+a set of high-performance components for building user interfaces. 
+It is a popular choice for developers who want to create high-performance mobile apps with React Native.
+
+Ultimately, the best alternative to React Native Paper depends 
+on your specific needs and requirements. If you are 
+not sure which alternative is the best fit for you, 
+it is a good idea to try out a few different ones and see which one you like the best.
+
+
+------////-----
+library docs
+https://www.dotnetcurry.com/jquery/1089/jquery-jqueryui-basic-beginner-tutorial#:~:
+text=A%20quick%20introduction%20to%20jQuery%20and%20jQuery,
+to%20foster%20your%20basic%20knowledge%20of%20jQuery.
+
+------////-----
+https://stackshare.io/react-native-paper/alternatives#:~:text=NativeBase
+%2C%20Material%2DUI%2C%20jQuery%20Mobile%2C%20SwiftUI%2C%20and%20CoreRender,
+alternatives%20and%20competitors%20to%20React%20Native%20Paper.
