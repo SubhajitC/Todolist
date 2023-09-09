@@ -1,0 +1,19 @@
+10. .env (at the root of your project):
+
+Create a .env file to store environment variables 
+like your MongoDB connection string:
+
+plaintext
+Copy code
+MONGODB_URI=your_mongodb_connection_string
+Save to grepper
+Replace your_mongodb_connection_string with your actual MongoDB connection string.
+
+This code represents a basic structure for your Node.js 
+backend with MongoDB. To test your API endpoints in Postman, 
+you can use the following format:
+
+Base URL: http://localhost:5000/api/ (adjust the port if needed)
+For tasks: http://localhost:5000/api/tasks/
+For users: http://localhost:5000/api/users/
+You can then send HTTP requests (

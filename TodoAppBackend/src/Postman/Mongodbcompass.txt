@@ -1,0 +1,45 @@
+To find your MongoDB connection string using MongoDB Compass, follow these steps:
+
+Open MongoDB Compass: Launch MongoDB Compass on your Windows 11 PC.
+
+Connect to MongoDB: Click on "Connect to Host" or "Connect" 
+to initiate a connection to your MongoDB server.
+
+Connect to Your MongoDB Server: You may need to specify connection details. Typically, 
+you'll connect to a remote server or a local server. Here's how to do both:
+
+Connect to a Remote MongoDB Server:
+
+Choose "Connect to a Host."
+Enter the MongoDB server address and port provided by your hosting service or system administrator.
+If your MongoDB server requires authentication, enter your username and password.
+Click "Connect."
+Connect to a Local MongoDB Server (localhost):
+
+Choose "Connect to a localhost."
+The connection details for a local MongoDB server should typically be pre-filled as 
+"localhost" and the default port "27017."
+If your local MongoDB server requires authentication, enter your username and password.
+Click "Connect."
+View Connection Details: After successfully connecting to the MongoDB server, 
+you'll see a list of databases on the left side of the MongoDB Compass interface.
+
+Retrieve Connection String:
+
+Click on the database you want to use for your application.
+In the database view, look for the "Connect" button or similar. 
+It's often located near the top right corner.
+Click on "Connect."
+MongoDB Compass will provide you with a connection string that you can copy. 
+This connection string contains all the information 
+needed to connect to your MongoDB database, including the hostname, port, 
+authentication credentials, and database name.
+Copy Connection String: Click the "Copy" 
+button next to the connection string to copy it to your clipboard.
+
+Now, you can use this copied connection string as the value 
+for MONGODB_URI in your .env file for your Node.js backend project.
+
+Remember to replace "your_mongodb_connection_string" in the .env 
+file with the actual connection string you copied from MongoDB Compass. 
+This connection string allows your Node.js backend to connect to your MongoDB database.
