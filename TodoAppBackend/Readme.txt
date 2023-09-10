@@ -2,22 +2,116 @@ To run your Node.js backend server, you can follow these steps:
 
 Open a terminal or command prompt.
 
-Navigate to the root directory of your backend project. 
-In your case, it's the TodoAppBackend directory 
-where your package.json and app.js files are located.
+node app from terminal
 
-Run the following command to start your Node.js server:
+then open postman checking and check This
 
-bash
+
+---=-=-=-=-========-----------------------------------
+-=-=-=-=-=-=-=-=----------------------------------
+///////-----------------------Important note ----------------------------//////
+---=-=-=-=-========-----------------------------------
+-=-=-=-=-=-=-=-=----------------------------------
+
+This code represents a basic structure for your Node.js 
+backend with MongoDB. To test your API endpoints in Postman, 
+you can use the following format:
+
+Base URL: http://localhost:5000/api/ (adjust the port if needed)
+For tasks: http://localhost:5000/api/tasks/
+For users: http://localhost:5000/api/users/
+You can then send HTTP requests (
+
+
+---=-=-=-=-========-----------------------------------
+-=-=-=-=-=-=-=-=----------------------------------
+///////-----------------------Important note ----------------------------//////
+---=-=-=-=-========-----------------------------------
+-=-=-=-=-=-=-=-=----------------------------------
+
+give me all endpoint link with paramter to test in postman
+
+Certainly! Here's a step-by-step process for testing the endpoints of your TodoApp backend in Postman:
+
+Step 1: Create a Task
+
+Open Postman.
+Select the "POST" method.
+Enter the URL: http://localhost:5000/api/tasks
+In the request body, select "raw" and set it to "JSON (application/json)".
+Enter the following JSON data:
+json
 Copy code
-node src/app.js
-This command tells Node.js to execute the app.js file, 
-which contains your Express application setup and server configuration.
+{
+  "title": "Task Title",
+  "description": "Task Description"
+}
+Click the "Send" button.
+You should receive a response with the created task object.
+Step 2: Get All Tasks
 
-If everything is set up correctly, you should see a message in the 
-terminal indicating that your server is running. 
-The message will include the port number, such as:
+Select the "GET" method.
+Enter the URL: http://localhost:5000/api/tasks
+Click the "Send" button.
+You should receive a response with an array of all tasks.
+Step 3: Get a Specific Task
 
-arduino
+Select the "GET" method.
+Enter the URL, replacing {taskId} with the ID of a specific task: 
+http://localhost:5000/api/tasks/{taskId}
+Click the "Send" button.
+You should receive a response with the task that matches the specified ID.
+Step 4: Update a Task
+
+Select the "PUT" method.
+Enter the URL, replacing {taskId} with the ID of the task to update: 
+http://localhost:5000/api/tasks/{taskId}
+In the request body, select "raw" and set it to "JSON (application/json)".
+Enter the following JSON data to update the task:
+json
 Copy code
-Server is running on port 5000
+{
+  "title": "Updated Task Title",
+  "description": "Updated Task Description",
+  "completed": true
+}
+Click the "Send" button.
+You should receive a response with the updated task object.
+Step 5: Delete a Task
+
+Select the "DELETE" method.
+Enter the URL, replacing {taskId} with the ID of the task to delete:
+ http://localhost:5000/api/tasks/{taskId}
+Click the "Send" button.
+You should receive a message confirming the deletion.
+Step 6: Register a User
+
+Select the "POST" method.
+Enter the URL: http://localhost:5000/api/users/register
+In the request body, select "raw" and set it to "JSON (application/json)".
+Enter the following JSON data to register a user:
+json
+Copy code
+{
+  "email": "user@example.com",
+  "password": "password123"
+}
+Click the "Send" button.
+You should receive a response with the created user object.
+Step 7: Login a User
+
+Select the "POST" method.
+Enter the URL: http://localhost:5000/api/users/login
+In the request body, select "raw" and set it to "JSON (application/json)".
+Enter the following JSON data to log in a user:
+json
+Copy code
+{
+  "email": "user@example.com",
+  "password": "password123"
+}
+Click the "Send" button.
+You should receive a response with a user authentication token.
+These steps guide you through testing the different endpoints of your 
+TodoApp backend in Postman, allowing you to interact with 
+your API and verify its functionality.
