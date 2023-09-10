@@ -7,6 +7,10 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
+// Load environment variables from .env file
+require('dotenv').config();
+
+
 // Middleware setup and configuration
 app.use(bodyParser.json());
 

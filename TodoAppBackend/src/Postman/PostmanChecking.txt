@@ -17,3 +17,92 @@ Base URL: http://localhost:5000/api/ (adjust the port if needed)
 For tasks: http://localhost:5000/api/tasks/
 For users: http://localhost:5000/api/users/
 You can then send HTTP requests (
+
+
+
+
+---=-=-=-=-========-----------------------------------
+-=-=-=-=-=-=-=-=----------------------------------
+///////-----------------------Important note ----------------------------//////
+---=-=-=-=-========-----------------------------------
+-=-=-=-=-=-=-=-=----------------------------------
+
+give me all endpoint link with paramter to test in postman
+
+ChatGPT
+To test the endpoints of your TodoApp backend in Postman, 
+you can use the following URLs and parameters:
+
+Create a Task:
+
+URL: http://localhost:5000/api/tasks
+Method: POST
+Request Body (JSON):
+json
+Copy code
+{
+  "title": "Task Title",
+  "description": "Task Description"
+}
+Expected Response: The created task object.
+Get All Tasks:
+
+URL: http://localhost:5000/api/tasks
+Method: GET
+Expected Response: An array of all tasks.
+Get a Specific Task:
+
+URL: http://localhost:5000/api/tasks/{taskId}
+Method: GET
+Replace {taskId} with the ID of a specific task.
+Expected Response: The task with the specified ID.
+Update a Task:
+
+URL: http://localhost:5000/api/tasks/{taskId}
+Method: PUT
+Replace {taskId} with the ID of the task to update.
+Request Body (JSON):
+json
+Copy code
+{
+  "title": "Updated Task Title",
+  "description": "Updated Task Description",
+  "completed": true
+}
+Expected Response: The updated task object.
+Delete a Task:
+
+URL: http://localhost:5000/api/tasks/{taskId}
+Method: DELETE
+Replace {taskId} with the ID of the task to delete.
+Expected Response: A message confirming the deletion.
+Register a User:
+
+URL: http://localhost:5000/api/users/register
+Method: POST
+Request Body (JSON):
+json
+Copy code
+{
+  "email": "user@example.com",
+  "password": "password123"
+}
+Expected Response: The created user object.
+Login a User:
+
+URL: http://localhost:5000/api/users/login
+Method: POST
+Request Body (JSON):
+json
+Copy code
+{
+  "email": "user@example.com",
+  "password": "password123"
+}
+Expected Response: User authentication token (for implementing user authentication).
+Please note that you need to replace {taskId} with the actual ID of 
+a task when testing task-related endpoints.
+
+These are the basic endpoints for your TodoApp backend. 
+You can use Postman to send requests to these URLs 
+with the specified methods and parameters for testing your API's functionality.
