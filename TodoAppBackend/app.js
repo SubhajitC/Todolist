@@ -1,8 +1,7 @@
- 
 const express = require('express');
 const connectDB = require('./src/config/database');
-const taskRoutes = require('./src/routes/taskRoutes');
-const userRoutes = require('./src/routes/userRoutes');
+const taskRoutes = require('./src/routes/taskRoutes'); // Correct path
+const userRoutes = require('./src/routes/userRoutes'); // Correct path
 const bodyParser = require('body-parser');
 
 const app = express();
