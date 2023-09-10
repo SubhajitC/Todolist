@@ -112,3 +112,29 @@ You should receive a response with a user authentication token.
 These steps guide you through testing the different endpoints of your 
 TodoApp backend in Postman, allowing you to interact with 
 your API and verify its functionality.
+
+
+---=-=-=-=-========-----------------------------------
+-=-=-=-=-=-=-=-=----------------------------------
+///////-----------------------Important note ----------------------------//////
+---=-=-=-=-========-----------------------------------
+-=-=-=-=-=-=-=-=----------------------------------
+
+The base URL for your TodoApp backend API is:
+
+bash
+Copy code
+http://localhost:5000/api/
+Save to grepper
+You can use this base URL as the starting point for constructing the 
+full URLs for your API endpoints. For example:
+
+To create a task: http://localhost:5000/api/tasks
+To get all tasks: http://localhost:5000/api/tasks
+To get a specific task: http://localhost:5000/api/tasks/{taskId} (Replace {taskId} with the actual task ID)
+To update a task: http://localhost:5000/api/tasks/{taskId} (Replace {taskId} with the actual task ID)
+To delete a task: http://localhost:5000/api/tasks/{taskId} (Replace {taskId} with the actual task ID)
+To register a user: http://localhost:5000/api/users/register
+To log in a user: http://localhost:5000/api/users/login
+You can append these endpoints to the base URL to interact with 
+the specific API routes as described in the previous steps.
