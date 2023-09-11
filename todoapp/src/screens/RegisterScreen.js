@@ -1,27 +1,44 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
 import { useDispatch } from 'react-redux';
-import { registerUser } from '../Redux/action'; // Assuming you have a registration action
+import { registerUser } from '../Redux/action';
 
 const RegisterScreen = ({ navigation }) => {
   const dispatch = useDispatch();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleRegister = () => {
-    // Validate email and password, and perform user registration
-    if (!email || !password) {
-      // Handle validation error
-      return;
+  const handleRegister = async () => {
+    try {
+      // Validate email and password
+      if (!email || !password) {
+        // Handle validation error
+        return;
+      }
+  
+      const userData = {
+        email,
+        password,
+      };
+  
+      console.log('Attempting registration...'); // Add this log
+  
+      const user = await dispatch(registerUser(userData));
+  
+      console.log('User data after registration:', user); // Add this log
+  
+      if (user) {
+        // Handle successful registration
+        console.log('Registration successful:', user); // Log success message to console
+        alert('Registration successful'); // Display alert message
+      } else {
+        // Handle registration failure, show an error message, etc.
+      }
+    } catch (error) {
+      // Handle API request error
+      console.error('Registration error:', error);
     }
-
-    // Dispatch registration action with user data (assuming Firebase or a similar authentication system)
-    dispatch(registerUser({ email, password }));
-
-    // Navigation logic after successful registration
-    navigation.navigate('Home');
   };
-
   return (
     <View style={styles.container}>
       <Text>Register</Text>

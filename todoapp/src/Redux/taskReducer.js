@@ -22,11 +22,27 @@ const taskReducer = (state = initialState, action) => {
         tasks: [...state.tasks, action.payload],
       };
     case UPDATE_TASK:
-      // Implement update logic here
+      const updatedTaskIndex = state.tasks.findIndex(task => task.id === action.payload.id);
+
+      if (updatedTaskIndex !== -1) {
+        const updatedTasks = [...state.tasks];
+        updatedTasks[updatedTaskIndex] = action.payload;
+
+        return {
+          ...state,
+          tasks: updatedTasks,
+        };
+      }
+
       return state;
+
     case DELETE_TASK:
-      // Implement delete logic here
-      return state;
+      const updatedTasks = state.tasks.filter(task => task.id !== action.payload);
+      return {
+        ...state,
+        tasks: updatedTasks,
+      };
+
     default:
       return state;
   }

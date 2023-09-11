@@ -8,18 +8,31 @@ const LoginScreen = ({ navigation }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleLogin = () => {
-    // Validate email and password, and perform authentication
-    if (!email || !password) {
-      // Handle validation error
-      return;
+  const handleLogin = async () => {
+    try {
+      // Validate email and password
+      if (!email || !password) {
+        // Handle validation error
+        return;
+      }
+
+      const userData = {
+        email,
+        password,
+      };
+
+      const user = await dispatch(loginUser(userData));
+
+      if (user) {
+        // Handle successful login, e.g., navigate to HomeScreen
+        navigation.navigate('Home');
+      } else {
+        // Handle login failure, show an error message, etc.
+      }
+    } catch (error) {
+      // Handle API request error
+      console.error('Login error:', error);
     }
-
-    // Dispatch login action with user data (assuming Firebase or a similar authentication system)
-    dispatch(loginUser({ email, password }));
-
-    // Navigation logic after successful login
-    navigation.navigate('Home');
   };
 
   return (

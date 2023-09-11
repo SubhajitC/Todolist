@@ -1,0 +1,94 @@
+------------------Do apiintregation In Redux from(TodoAppBackend to TodoApp ) ---------
+base url:http://localhost:5000/api/
+1) http://localhost:5000/api/users/register.
+{
+  "email": "user@example.com",
+  "password": "password123"
+}
+2)  http://localhost:5000/api/users/login
+{
+  "email": "user@example.com",
+  "password": "password123"
+}
+3) http://localhost:5000/api/tasks
+{
+  "title": "Updated Task Title",
+  "description": "Updated Task Description",
+  "completed": true
+}
+
+
+TodoAppBackend/
+├── node_modules/
+├── src/
+│   ├── config/
+│   │   ├── database.js
+│   │   └── index.js
+│   ├── controllers/
+│   │   ├── taskController.js
+│   │   └── userController.js
+│   ├── models/
+│   │   ├── Task.js
+│   │   ├── User.js
+│   ├── routes/
+│   │   ├── taskRoutes.js
+│   │   ├── userRoutes.js
+│   ├── app.js
+├── package.json
+├── .env
+└── ...
+------------------Do apiintregation  In Redux from(TodoAppBackend to TodoApp ) ---------
+base url:http://localhost:5000/api/
+1) http://localhost:5000/api/users/register.(using parameter)
+{
+  "email": "user@example.com",
+  "password": "password123"
+}
+2)  http://localhost:5000/api/users/login (using parameter)
+{
+  "email": "user@example.com",
+  "password": "password123"
+}
+3) http://localhost:5000/api/tasks(using parameter)
+{
+  "title": "Updated Task Title",
+  "description": "Updated Task Description",
+  "completed": true
+}
+For (LoginScreen,RegisterScreen,HomeScreen)
+TodoApp/
+├── android/
+│   ├── app/
+│   ├── gradle/
+│   └── ...
+├── ios/
+│   ├── Podfile
+│   ├── ...
+├── node_modules/
+├── src/
+│   ├── components/
+│   │   ├── Auth/
+│   │   │   ├── Login.js
+│   │   │   ├── Register.js
+│   │   │   └── ...
+│   │   ├── Tasks/
+│   │   │   ├── TaskList.js
+│   │   │   ├── TaskItem.js
+│   │   │   ├── AddTaskForm.js
+│   │   │   └── ...
+│   ├── navigation/
+│   │   ├── AppNavigator.js
+│   │   └── ...
+│   ├── redux/
+│   │   ├── actions.js
+│   │   ├── reducers.js
+│   │   └── store.js
+│   └── screens/
+│       ├── HomeScreen.js
+│       ├── LoginScreen.js
+│       ├── RegisterScreen.js
+│       └── ...
+├── App.js
+├── firebase.js
+├── package.json
+└── ...
