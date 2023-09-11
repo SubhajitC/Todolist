@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { View, Text, Button, FlatList } from 'react-native';
+import { View, Text, Button, FlatList, TextInput } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
-import { addTask, deleteTask, markTaskCompleted } from '../Redux/actions'; // Assuming you have task-related actions
+import { addTask, deleteTask, markTaskCompleted } from '../Redux/action'; // Assuming you have task-related actions
 
 const HomeScreen = () => {
   const dispatch = useDispatch();
@@ -36,7 +36,7 @@ const HomeScreen = () => {
       </View>
       <FlatList
         data={tasks}
-        keyExtractor={(item) => item.id.toString()}
+        keyExtractor={(item) => item.id.toString()} // Assuming each task has an 'id' property
         renderItem={({ item }) => (
           <View>
             <Text>{item.title}</Text>

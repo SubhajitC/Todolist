@@ -1,14 +1,11 @@
 what will folder structure i will maitain for this with file
 TodoApp/
 ├── android/
-│   ├── app/
-│   ├── gradle/
-│   └── ...
 ├── ios/
-│   ├── Podfile
-│   ├── ...
 ├── node_modules/
 ├── src/
+│   ├── api/
+│   │   └── api.js         # API functions
 │   ├── components/
 │   │   ├── Auth/
 │   │   │   ├── Login.js
@@ -20,21 +17,19 @@ TodoApp/
 │   │   │   ├── AddTaskForm.js
 │   │   │   └── ...
 │   ├── navigation/
-│   │   ├── AppNavigator.js
-│   │   └── ...
+│   │   └── AppNavigator.js # Navigation setup
 │   ├── redux/
-│   │   ├── actions.js
-│   │   ├── reducers.js
-│   │   └── store.js
-│   └── screens/
-│       ├── HomeScreen.js
-│       ├── LoginScreen.js
-│       ├── RegisterScreen.js
-│       └── ...
-├── App.js
-├── firebase.js
+│   │   ├── actions.js     # Redux actions
+│   │   ├── reducers.js    # Redux reducers
+│   │   └── store.js       # Redux store configuration
+│   ├── screens/
+│   │   ├── HomeScreen.js
+│   │   ├── LoginScreen.js
+│   │   ├── RegisterScreen.js
+│   │   └── ...
+│   ├── App.js              # Main App component
+│   ├── firebase.js         # Firebase config (if used)
 ├── package.json
-└── ...
 Save to grepper
 Explanation of the folder structure and key files:
 

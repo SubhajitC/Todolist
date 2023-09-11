@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
 import { useDispatch } from 'react-redux';
-import { registerUser } from '../Redux/actions'; // Assuming you have a registration action
+import { registerUser } from '../Redux/action'; // Assuming you have a registration action
 
 const RegisterScreen = ({ navigation }) => {
   const dispatch = useDispatch();
