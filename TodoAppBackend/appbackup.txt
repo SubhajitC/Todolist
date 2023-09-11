@@ -1,0 +1,35 @@
+const express = require('express');
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+const User = require('./models/User'); // Import your User model
+const app = express();
+const port = process.env.PORT || 3000;
+
+// Middleware setup (body-parser, CORS, etc.)
+app.use(bodyParser.json());
+// Add any other middleware you need here
+
+// Define your routes
+
+// Define a route for user login
+app.post('/api/users/login', async (req, res) => {
+  const { email, password } = req.body;
+
+  try {
+    // Validate email and password (e.g., check against database)
+    // If valid, generate a token and send it with the user object
+    const user = await User.findByCredentials(email, password);
+    const token = await user.generateAuthToken();
+
+    // Send a success response with user data and token
+    res.status(200).json({ user, token });
+  } catch (error) {
+    // Handle login failure
+    res.status(401).json({ error: 'Invalid credentials' });
+  }
+});
+
+// Start the server
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
