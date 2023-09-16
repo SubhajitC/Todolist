@@ -1,3 +1,8 @@
+Given a non empty array of integers number every element appears twice for one find that 
+single one you must implement a solution with a linares number 
+complexity and use only constant extra space give me Javascript code for this
+
+
 function findSingleNumber(nums){
    let result = 0;
    for(let num of nums){
