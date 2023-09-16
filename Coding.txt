@@ -17,4 +17,34 @@ const nums = [4,1,2,1,2];
 const singleNumber = findSingleNumber(nums);
 console.log(singleNumber);
 
-V
+
+explanation
+
+
+// Define a function called findSingleNumber that takes an array 'nums' as its parameter.
+function findSingleNumber(nums) {
+  // Initialize a variable 'result' to 0. This variable will be used to store the result.
+  let result = 0;
+
+  // Iterate through each element 'num' in the 'nums' array.
+  for (let num of nums) {
+    // Use the XOR (^) bitwise operator to update the 'result'.
+    // XOR combines bits such that if they are the same, the result is 0,
+    // and if they are different, the result is 1.
+    // By XORing all elements together, duplicates will cancel each other out,
+    // and the only element left will be the one that appears only once.
+    result ^= num;
+  }
+
+  // After the loop finishes, 'result' will contain the single number that appears only once.
+  // Return 'result' as the final answer.
+  return result;
+}
+
+// Example usage:
+// Create an array 'nums' containing integers with one number (5) appearing only once.
+const nums = [2, 2, 3, 1, 3, 1, 5];
+// Call the 'findSingleNumber' function with the 'nums' array as the argument.
+const singleNumber = findSingleNumber(nums);
+// Print the result to the console.
+console.log(singleNumber); // Output: 5
